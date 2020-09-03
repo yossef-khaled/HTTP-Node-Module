@@ -7,6 +7,8 @@ const port = 3000;
 const server = http.createServer((req, res) => {
     console.log("The request is : ");
     console.log(req.headers);
+
+    //Success code
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/html');
     res.end('<html><body><h1>Hello World!!</h1></body></html>');
